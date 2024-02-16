@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Social Media Dashboard</h1>
+        <div id="login-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="dashboard" style="display: none;">
+            <button onclick="logout()">Logout</button>
+            <div id="post-form">
+                <textarea id="post-content" placeholder="Write something..."></textarea>
+                <button onclick="post()">Post</button>
+            </div>
+            <div id="feeds"></div>
+        </div>
+    </div>
+
+    <script src="media.js"></script>
+</body>
+</html>
